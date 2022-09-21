@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightgray;
+            display: grid;
+            grid-template-rows: repeat(3, minmax(50px, 100px));   /*repeat(4, 100px);/*2:1*/
+            grid-template-columns: repeat(3, minmax(50px, 100px)); /*repeat(4 1fr) ;/*2:1*/
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+        .item{
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+        }
+        .item:nth-child(2n){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item" style="grid-column-start: 1; grid-column-end: 3; " >header</div> -->
+        <div class="item" style="grid-column: 1/span 2; " >header</div>
+        <div class="item">sidebar</div>
+        <div class="item">content</div>
+        <div class="item">footer</div>
+        <div class="item">header</div>
+        <div class="item">sidebar</div>
+        <div class="item">content</div>
+        <div class="item">footer</div>
+</body>
+</html>

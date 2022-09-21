@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: rgb(255, 255, 0);
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+        input:focus{
+            color: red;
+        }
+        input:checked ~ label{
+            color: red;
+        }
+        input:disabled{
+            background-color: rgba(22, 88, 105, 0.5);
+        }
+        input:enabled{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com">네이버링크</a>
+    <a href="https://www.daum.com">다음링크</a>
+    <a href="https://www.google.com">구글링크</a>
+
+    <input type="text"disabled>
+    <input type="text">
+
+    <input type="checkbox" id="chbName">
+    <label for="chbName">이름체크</label>
+    <label for="chbName">이름체크2</label>
+    <label for="chbName">이름체크3</label>
+</body>
+</html>
+

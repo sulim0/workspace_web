@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: boxAni;
+            animation-duration: 10s;/*동작시간*/
+            /*animation-delay: 2s;*/
+            margin: 20px;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            position: relative;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes boxAni{
+            0%{ background-color: blue;
+                width: 100px;
+                left: 50px;
+            }
+            50%{ background-color: pink;
+                width: 100px;
+                left: 150px;
+            }
+            100%{ background-color: blue;
+                width: 100px;
+                left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"style="animation-fill-mode: none"></div>
+    <!--<div class="box"style="animation-fill-mode: forwards"></div>
+    <div class="box"style="animation-fill-mode: backwards"></div>
+    <div class="box"style="animation-fill-mode: both"></div>-->
+    
+</body>
+</html>
+

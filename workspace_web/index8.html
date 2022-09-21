@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+        <label for="name">고객명:</label>
+        <input type="text" id="name">
+        </p>
+        <label for="number">전화번호:</label>
+        <input type="tel"id="number">
+        <br><br>
+        <label>E-mail:</label>
+        <input type="email"id="E-mail">
+        
+
+        <p>
+            <label for="selectPz">피자선택:</label> 
+            <select id="selectPz">
+                <option selected disabled>피자를 선택하세요.</option>
+                <option>고구마피자</option> 
+                <option>불고기피자</option>
+                <option>치즈피자</option>
+            </select>
+            </label>
+        </p>
+        
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <p>
+                <input type="radio"id="sm"name=Pz><label for="sm">small</label>
+            </p>
+            <p>
+                <input type="radio"id="md"name=Pz><label for="md">Medium</label>
+            </p>
+            <p>
+                <input type="radio"id="lg"name=Pz><label for="lg">Large</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>토핑 선택</legend>
+            
+            <input type="checkbox"><label>베이컨</label>
+            
+            <p>
+                <input type="checkbox"><label>치즈</label>
+            </p>
+            <p>
+                <input type="checkbox"><label>양파</label>
+            </p>
+            <p>
+                <input type="checkbox"><label>버섯</label>
+            </p>
+        </fieldset>
+
+        <p>
+            희망배송시간:   
+            <input type="time">
+        </p>
+        <p>
+            <label>배송시 요청사항:</label>
+            <textarea></textarea>
+        </p>
+        <p>
+            <input type="submit"value="주문하기">
+        </p>
+    </form> 
+</body>
+</html>
+
+a

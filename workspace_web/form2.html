@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="loginId" placeholder="아이디">
+    <br>
+    <input type="password" id="loginPw" placeholder="비밀번호">
+    <br>
+    <button id="btnLogin" onclick="tryLogin()">로그인 시도</button>
+    <br>
+<!-- 
+    <button onclick="alert('click')">클릭</button>
+    <button onclick="btnClicked()">클릭(함수형)</button>
+    <button id="proBtn">클릭(프로퍼티)</button>
+    <button id="lisBtn">클릭(리스너)</button>
+    <button ondblclick="alert('더블클릭')">더블클릭</button> -->
+
+    <script>
+        const inputId = document.getElementById('loginId');
+        const inputPw = document.getElementById('loginPw');
+
+        inputId.addEventListener('keydown', function(keyInto){
+            if(keyInto.keyCode === 13){
+                inputPw.focus();
+            }
+            // console.log(e);//정보 출력
+            // console.log('키가 눌림');
+            //엔터가 눌리면 비밀번호 칸으로 이동
+            
+        })
+
+        // 비밀번호 칸에서 키가 입력되었을때 입력된 키가 엔터면
+        //로그인버튼이 눌린것과 동일한 동작을 수행하여라
+        inputPw.addEventListener('keydown', function(keyInto){
+            if(keyInto.keyCode === 13){
+                //btnLogin.focus();
+                // inputId.value ='';
+                // inputPw.value ='';
+                //tryLogin(); 버튼은 누른것 처럼 동작
+                btnLogin.click(); //버튼을 누른거
+            }
+        });
+            // console.log(e);//정보 출력
+            // console.log('키가 눌림');
+            //엔터가 눌리면 비밀번호 칸으로 이동
+            
+            inputPw.onfocus = () => {
+                console.log('비밀번호 input 포커싱');
+            }
+        
+
+        function tryLogin(){
+            inputId.value ='';
+            inputPw.value ='';
+            // console.log(inputId.value);
+            // console.log(inputPw.value);
+            //아이디와 비밀번호에 있는 입력된 텍스트를 없애기
+            
+        }
+
+        // function btnClicked(){
+        //     alert('클릭(함수형)');
+        // }
+
+        // function btnproClicked(){
+        //     alert('클릭(프로퍼티)');
+        // }
+        // const btn1 = document.getElementById('proBtn');
+        // btn1.onclick = btnproClicked;
+
+        // btn1.onmouseover = () =>{
+        //     alert('마우스가 올라옴');
+        // }
+        // btn1.onclick = function() {
+        //     alert('클릭(프로퍼티) function()');
+        // }
+        // btn1.onclick = () => {
+        //     alert('클릭(프로퍼티) ()=>빙식');
+        // }
+
+        // function btnLisClicked(){
+        //     alert('클린(리스너)');
+        // }
+
+        // const lisBtn = document.getElementById('lisBtn');
+        // lisBtn.addEventListener('click' ,btnLisClicked);
+
+        // lisBtn.addEventListener('click' ,function(){
+        //     alert('클린(리스너) 함수 선언');
+        // });
+
+        // lisBtn.addEventListener('click' ,() => {
+        //     alert('클린(리스너) 함수 선언');
+        // });
+    </script>
+</body>
+
+
+</html>

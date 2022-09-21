@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class ="dataA" data-aaa="20">a값 1</p>
+    <p class ="dataA" data-aaa="30">a값 2</p>
+    <p class ="dataA" data-aaa="40">a값 3</p>
+
+    <p class ="dataB" data-bbb="50">a값 1</p>
+    <p class ="dataB" data-bbb="60">a값 2</p>
+    <p class ="dataB" data-bbb="70">a값 3</p>
+
+    <script>
+        const elAs = document.getElementsByClassName('dataA');
+
+        for(let el of elAs){
+            console.log(el.dataset.aaa);
+        }
+
+        const elBs = document.getElementsByClassName('dataB');
+
+        for(let el of elBs){
+            console.log(el.dataset.bbb);
+        }
+        
+    </script>
+</body>
+</html>

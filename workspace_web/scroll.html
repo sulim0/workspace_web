@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 3000px;
+            height: 3000px;
+            background:linear-gradient(rgb(114, 201, 33), gray);
+        }
+        div{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="scTo()">ScrollTo</button>
+        <button onclick="scBy()">ScrollBy</button>
+    </div>  
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci sit vel ullam sequi amet tenetur perferendis molestias aspernatur assumenda. Temporibus soluta, perferendis porro nesciunt voluptatibus ducimus dignissimos magnam odio voluptatum.</p>
+
+    <script>
+        function scTo(){
+            window.scrollTo({left:100, top:200, behavior:"smooth"});//정해진 위치로 이동
+        }
+
+        function scBy(){
+            window.scrollBy({left:100, top:200, behavior:"smooth"});//계속 이동
+        }
+    </script>
+</body>
+</html>

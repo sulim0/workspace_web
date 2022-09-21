@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .bgRed{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        const box = document.getElementById('box');
+        
+        for(let box of boxes){
+            box.addEventListener('click', function(){
+                this.classList.toggle('bgRed');
+                //this.style.backgroundColor='red';//이벤트가 발생한 주체를 의미함.
+                // document.getElementById('box2').style.backgroundColor='red';
+                // document.getElementById('box3').style.backgroundColor='blue';
+                // console.log('클릭됨');
+            });
+        }
+    
+    </script>
+</body>
+</html>

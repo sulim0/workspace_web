@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="red">red</p>
+    <p class="green">green</p>
+    <p class="green">green</p>
+    <p class="blue">blue</p>
+
+    <script>
+        document.querySelector('#red').style.color='red';
+
+        const greens = document.querySelectorAll('.green');
+        for(let itm of greens){
+            itm.style.color='green';
+        }
+        const blues = document.getElementsByClassName('blue');
+        for(let itm of blues){
+            itm.style.color='blue';
+        }
+    </script>
+</body>
+</html>

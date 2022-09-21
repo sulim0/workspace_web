@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showP()">show</button>
+    <button onclick="showP()">Delete</button>
+    <div class="main">
+        <p class="hidden">p1</p>
+        <p class="hidden">p2</p>
+        <p class="hidden">p3</p>
+    </div>
+    <script>
+        function showP(){
+            const pHiddens = document.querySelectorAll('.main > p');
+            console.log(pHiddens);
+            for(let pitem of pHiddens){
+                // pitem.setAttribute("class", "");
+                pitem.classList.remove("hidden");
+            }
+        }
+        // const elp1 = document.createElement("p");
+        // const txtElp1 =  document.createTextNode('p1');
+        // elp1.appendChild(txtElp1);
+
+        // document.getElementsByClassName('main')[0].appendChild(elp1);
+
+        // const e1 = document.createElement("P");
+        // document.body.appendChild(el1);
+
+        // const txtEl1 = document.createTextNode('p안에 들어갈 텍스트');
+        // el1.appendChild(txtEl1);
+
+        // const attrEl1 = document.createAttribute("id");
+        // attrEl1.value = "p1";
+        // el1.setAttributeNode(attrEl1);
+
+        // const el2 = document.createElement("a");
+        // document.body.appendChild(el2);
+
+        // const txtEl2 = document.createTextNode('a태그 링크');
+        // el2.appendChild(txtEl2);
+
+        // const attrEl2 = document.createAttribute("href");
+        // attrEl2.value= "https://www.naver.com";
+        // el2.setAttributeNode(attrEl2);
+
+    </script>
+</body>
+</html>

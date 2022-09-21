@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: row;/*주축설정*/
+            justify-content: space-evenly;/*주축정렬*/
+            align-items: stretch;/*교차축정렬*/
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap; */
+        }
+        .item{ background-color: red; 
+            color: white;
+            /* width: 30px; height: 30px;  */
+        }
+        .item:nth-child(2n) { background-color: blue; }
+        .widthSize{
+            /*width: 100%;/* % 보이는 사이즈의 크기*/
+            margin: 0;
+            background-color: darkblue;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="widthSize"></div>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
